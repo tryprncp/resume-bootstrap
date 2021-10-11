@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  outline: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+  background: #ffffff;
+  cursor: default;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  transition-duration: 0.3s;
+}
+
+.resume .skills h3,
+.resume .contact h3,
+.resume .profiles h3{
+  color:#ffffff;
+}
+.profiles, .contact, .skills  {
+  margin: 5px;
+  padding: 5px;
+}
+.con {
+  padding: 5px;
+}
+.resume {
+  width: 960px;
+  background:#f5f5f5 ;
+  color: #ffffff;
+  margin: 20px auto;
+  position: relative;
+  display: flex;
+}
+
+.resume .base,
+.resume .func {
+  box-sizing: border-box;
+  float: left;
+}
+
+.resume .base > div,
+.resume .func > div {
+  padding-bottom: 10px;
+}
+
+.resume .base > div:last-of-type,
+.resume .func > div:last-of-type {
+  padding-bottom: 20px;
+}
+
+.resume .base {
+  width: 50%;
+  padding: 30px 15px;
+  background: #2e2e2e;
+  color: #ffffff;
+}
+
+.resume .base .profile {
+  background: #39999e;
+  padding: 30px 15px 40px 15px;
+  margin: -30px -15px 45px -15px;
+  position: relative;
+  z-index: 2;
+}
+
+.resume .base .profile .photo img {
+  width:auto;
+  border-radius: 50%;
+}
+
+.resume .base .profile .photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume .base .profile .fa-rocket {
+  font-size: 100px;
+  text-align: center;
+  margin: auto;
+  color: #454545;
+}
+
+.resume .base .profile .info {
+  text-align: center;
+  color: #ffffff;
+}
+.resume .base .profile .info .job {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.resume .base .contact div {
+  line-height: 24px;
+}
+
+.resume .base .contact div a:hover {
+  color: #ffffff;
+}
+
+.resume .base .contact div a:hover span::after {
+  width: 100%;
+}
+
+.resume .base .contact div:hover i {
+  color: #ffffff;
+}
+
+.resume .base .contact div i {
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 15px;
+  transition-duration: 0.3s;
+}
+
+.resume .base .contact div span {
+  position: relative;
+}
+
+.resume .base .contact div span::after {
+  content: "";
+  position: absolute;
+  background: #fdd835;
+  height: 1px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  transition-duration: 0.3s;
+}
+
+.resume .base .follow .box {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.resume .base .follow .box a {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.resume .base .follow .box a:hover i {
+  background: #ffffff;
+  border-radius: 5px;
+  transform: rotate(45deg) scale(0.8);
+}
+
+.resume .base .follow .box a:hover i::before {
+  transform: rotate(-45deg) scale(1.5);
+}
+
+.resume .base .follow .box i {
+  display: inline-block;
+  font-size: 30px;
+  background: #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  color: #454545;
+  margin: 0 10px 10px 10px;
+  transition-duration: 0.3s;
+}
+
+.resume .base .follow .box i::before {
+  transition-duration: 0.3s;
+}
+
+.resume .base .follow .box i.fa::before {
+  display: block;
+}
+
+.resume .func {
+  width: 100%;
+  padding: 30px;
+}
+
+.resume .func:hover > div {
+  transition-duration: 0.5s;
+}
+
+.resume .func:hover > div:hover h3 i {
+  transform: scale(1.25);
+}
+
+.resume .func:hover > div:not(:hover) {
+  opacity: 0.5;
+}
+
+.resume .func h3 {
+  transition-duration: 0.3s;
+  margin-top: 0;
+}
+
+.resume .func h3 i,
+.resume .skills h3 i,
+.resume .contact h3 i,
+.resume .profiles h3 i{
+  color: #454545;
+  background: #39999e;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  line-height: 42px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 8px;
+  transition-duration: 0.3s;
+}
+
+.resume .func .educ{
+  clear: both;
+  background: #c7c7c7;
+  padding: 15px;
+  margin: 15px 0 0;
+}
+.resume .func .exp{
+  clear: both;
+  background: #c7c7c7;
+  padding: 15px;
+  margin: 15px 0 0;
+}
+
+.resume .func .skills-soft {
+  clear: both;
+  background: #c7c7c7;
+  padding: 15px;
+  margin: 15px 0 0;
+}
